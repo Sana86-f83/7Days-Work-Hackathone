@@ -1,0 +1,11 @@
+export default {
+  name: "shipment",
+  title: "Shipment",
+  type: "document",
+  fields: [
+    { name: "orderId", title: "Order ID", type: "reference", to: [{ type: "order" }] },
+    { name: "shipmentId", title: "Shipment ID", type: "string" },
+    { name: "status", title: "Status", type: "string" },
+    { name: "expectedDelivery", title: "Expected Delivery Date", type: "datetime" },
+  ],
+};
